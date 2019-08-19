@@ -1,45 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css"/>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sit on chair - warsztat</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 <header>
-    <div class="menu">
+    <div class="head mainWidth_menu">
         <nav>
+            <p>Sit <span>on</span> chair</p>
             <ul>
-                <li>SIT <span class="leftAqua">ON</span> CHAIR</li>
-                <span class="right">
-                    <li>O FIRMIE</li>
-                    <li>GALERIA</li>
-                    <li>KONTAKT</li>
-                </span>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">O firmie</a>
+                    <ul class="subMenu">
+                        <li class="arrow"></li>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Aktualności</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
-    <!--sekcja z fotelem i opisem-->
-        <section>
-            <div class="content">
-                 <div class="chair">
-                <img src="images/black_chair.png" width="590px" height="420px">
-                 </div>
-                 <div class="text">
-
-                 </div>
-            </div>
-        </section>
-
-  <!--      <section></section> - sekcja ze zdjęciami
-        foteli
-        <section></section> - sekcja z cennikiem
-        <section></section> - sekcja z formularzem
-        <footer></footer> - stopka strony,
-        ponieważ ma takie samo tło jak sekcja wyżej,
-        nie odcina się od niej w widoczny sposób,
-        stanowi jednak odrębną część strony-->
-
 </header>
+<section class="hero">
+    <div class="main_width hero">
+        <div class="hero_image">
+        </div>
+        <div class="description_info">
+            <h1>Sit <span>on </span>our <span>chair</span></h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quisquam unde natus assumenda odio sunt aut ad
+                nulla, facere dolore blanditiis dolor. Lorem ipsum dolor sit amet consectetur adipisicing natus assumenda
+                elit.
+            </p>
+            <a href="#"><button>Zobacz więcej</button></a>
+        </div>
+    </div>
+</section>
+<section class="gallery">
+    <div class="main_width gallery">
+        <div class="photo1">
+            <img src="images/box1_img.jpg" alt="chair clair">
+            <div class="label">
+                <p>Chair <span>clair</span></p>
+            </div>
+        </div>
+        <div class="photo2">
+            <img src="images/box2_img.jpg" alt="chair clair">
+            <div class="label">
+                <p>Chair <span>margarita</span></p>
+            </div>
+        </div>
+        <div class="photo1 active">
+            <p>Finds all inputs</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum saepe ex laboriosam, harum atque neque,
+                veritatis quae assumenda odio sunt aut ad
+                nulla, facere.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint porro minus.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="price_list">
+    <div class="main_width h3">
+        <h3>Cennik</h3>
+    </div>
+    <div class="main_width price_list">
+        <div class="plan_select">
+            <h3>Basic plan</h3>
+            <div class="price">
+                <p>85</p>
+                <p>pln/msc</p>
+            </div>
+            <div class="plan_info">
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+            </div>
+            <div class="button_container">
+                <a href="#"><button>dołącz</button></a>
+            </div>
+        </div>
+        <div class="plan_select active">
+            <h3>Standard plan</h3>
+            <div class="price">
+                <p>95</p>
+                <p>pln/msc</p>
+            </div>
+            <div class="plan_info">
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 5 lat</p>
+            </div>
+            <div class="button_container">
+                <a href="#"><button>dołącz</button></a>
+            </div>
+        </div>
+        <div class="plan_select">
+            <h3>Advance plan</h3>
+            <div class="price">
+                <p class="left">211</p>
+                <p>pln/msc</p>
+            </div>
+            <div class="plan_info">
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 6 lat</p>
+                <p>Porady projektanta</p>
+            </div>
+            <div class="button_container">
+                <a href="#"><button>dołącz</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="main_width contact_h3">
+        <h3>kontakt</h3>
+    </div>
+    <div class="main_width contact">
+        <div class="form">
+            <form>
+                <label>
+                    <input type="text" name="name" placeholder="Imię">
+                </label>
+                <label>
+                <input type="email" name="email" placeholder="email">
+                </label>
+                <label>
+                    <textarea cols="50" rows="10" placeholder="Wiadomość"></textarea>
+                </label>
+            </form>
+            <div class="contact_button">
+                <div class="img_container">
+                </div>
+                <p><span class="check_box"></span> Zgadzam się na
+                    przetwarzanie<br>danych
+                    osobowych
+                </p>
+                <a  href="#"><button>wyślij</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="main_width footer">
+        <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+        <div class="media">
+            <img src="images/flickr.png" alt="flickr logo">
+            <img src="images/vimeo.png" alt="vimeo logo">
+            <img src="images/pinterest.png" alt="pinterest logo">
+            <img src="images/twitter.png" alt="twitter logo">
+        </div>
+        <p>sit <span>on</span> chair</p>
+    </div>
+</footer>
 </body>
+
 </html>
